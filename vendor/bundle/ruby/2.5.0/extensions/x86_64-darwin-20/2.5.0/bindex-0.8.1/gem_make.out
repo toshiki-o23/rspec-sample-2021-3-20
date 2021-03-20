@@ -1,0 +1,15 @@
+current directory: /Users/toshiki/Documents/Techpit/rspec/rspec-sample/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/toshiki/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20210319-49028-1804xa5.rb extconf.rb
+creating Makefile
+
+current directory: /Users/toshiki/Documents/Techpit/rspec/rspec-sample/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/toshiki/Documents/Techpit/rspec/rspec-sample/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/toshiki/Documents/Techpit/rspec/rspec-sample/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210319-49028-kejy90/skiptrace/internal

@@ -1,0 +1,15 @@
+current directory: /Users/toshiki/Documents/Techpit/rspec/rspec-sample/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+/Users/toshiki/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20210319-49028-g5k1pp.rb extconf.rb
+creating Makefile
+
+current directory: /Users/toshiki/Documents/Techpit/rspec/rspec-sample/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/toshiki/Documents/Techpit/rspec/rspec-sample/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/toshiki/Documents/Techpit/rspec/rspec-sample/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20210319-49028-awosc4
