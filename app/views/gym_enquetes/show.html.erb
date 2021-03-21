@@ -1,39 +1,39 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%= GymEnquete.human_attribute_name(:name) %>:</strong>
   <%= @gym_enquete.name %>
 </p>
 
 <p>
-  <strong>Mail:</strong>
+  <strong><%= GymEnquete.human_attribute_name(:mail) %>:</strong>
   <%= @gym_enquete.mail %>
 </p>
 
 <p>
-  <strong>Age:</strong>
+  <strong><%= GymEnquete.human_attribute_name(:age) %>:</strong>
   <%= @gym_enquete.age %>
 </p>
 
 <p>
-  <strong>Course:</strong>
-  <%= @gym_enquete.course_id %>
+  <strong><%= GymEnquete.human_attribute_name(:course_id) %>:</strong>
+  <%= @gym_enquete.course_name %>
 </p>
 
 <p>
-  <strong>Score:</strong>
-  <%= @gym_enquete.score %>
+  <strong><%= GymEnquete.human_attribute_name(:score) %>:</strong>
+  <%= @gym_enquete.view_score %>
 </p>
 
 <p>
-  <strong>Request:</strong>
+  <strong><%= GymEnquete.human_attribute_name(:request) %>:</strong>
   <%= @gym_enquete.request %>
 </p>
 
 <p>
-  <strong>Present:</strong>
-  <%= @gym_enquete.present_id %>
+  <strong><%= GymEnquete.human_attribute_name(:present_id) %>:</strong>
+  <%= @gym_enquete.present_name %>
 </p>
 
-<%= link_to 'Edit', edit_gym_enquete_path(@gym_enquete) %> |
-<%= link_to 'Back', gym_enquetes_path %>
+<%= link_to (t 'common.edit'), edit_gym_enquete_path(@gym_enquete) %> |
+<%= link_to (t 'common.back'), gym_enquetes_path %>

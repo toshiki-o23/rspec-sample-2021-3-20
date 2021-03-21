@@ -1,6 +1,5 @@
-<h1>Editing Food Enquete</h1>
+<h1><%= t 'food_enquetes.common.title' %></h1>
 
 <%= render 'form', food_enquete: @food_enquete %>
-
-<%= link_to 'Show', @food_enquete %> |
-<%= link_to 'Back', food_enquetes_path %>
+<%= link_to (t 'common.show'), @food_enquete %> |
+<%= link_to (t 'common.back'), food_enquetes_path %>
