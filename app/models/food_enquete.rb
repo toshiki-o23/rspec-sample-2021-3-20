@@ -1,0 +1,2 @@
+class FoodEnquete < ApplicationRecord
+end

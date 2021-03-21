@@ -1,0 +1,2 @@
+class GymEnquete < ApplicationRecord
+end

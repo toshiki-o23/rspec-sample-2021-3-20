@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @gym_enquete.name %>
+</p>
+
+<p>
+  <strong>Mail:</strong>
+  <%= @gym_enquete.mail %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @gym_enquete.age %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @gym_enquete.course_id %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @gym_enquete.score %>
+</p>
+
+<p>
+  <strong>Request:</strong>
+  <%= @gym_enquete.request %>
+</p>
+
+<p>
+  <strong>Present:</strong>
+  <%= @gym_enquete.present_id %>
+</p>
+
+<%= link_to 'Edit', edit_gym_enquete_path(@gym_enquete) %> |
+<%= link_to 'Back', gym_enquetes_path %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Food Enquetes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Mail</th>
+      <th>Age</th>
+      <th>Food</th>
+      <th>Score</th>
+      <th>Request</th>
+      <th>Present</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @food_enquetes.each do |food_enquete| %>
+      <tr>
+        <td><%= food_enquete.name %></td>
+        <td><%= food_enquete.mail %></td>
+        <td><%= food_enquete.age %></td>
+        <td><%= food_enquete.food_id %></td>
+        <td><%= food_enquete.score %></td>
+        <td><%= food_enquete.request %></td>
+        <td><%= food_enquete.present_id %></td>
+        <td><%= link_to 'Show', food_enquete %></td>
+        <td><%= link_to 'Edit', edit_food_enquete_path(food_enquete) %></td>
+        <td><%= link_to 'Destroy', food_enquete, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Food Enquete', new_food_enquete_path %>

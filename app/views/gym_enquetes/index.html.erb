@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Gym Enquetes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Mail</th>
+      <th>Age</th>
+      <th>Course</th>
+      <th>Score</th>
+      <th>Request</th>
+      <th>Present</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gym_enquetes.each do |gym_enquete| %>
+      <tr>
+        <td><%= gym_enquete.name %></td>
+        <td><%= gym_enquete.mail %></td>
+        <td><%= gym_enquete.age %></td>
+        <td><%= gym_enquete.course_id %></td>
+        <td><%= gym_enquete.score %></td>
+        <td><%= gym_enquete.request %></td>
+        <td><%= gym_enquete.present_id %></td>
+        <td><%= link_to 'Show', gym_enquete %></td>
+        <td><%= link_to 'Edit', edit_gym_enquete_path(gym_enquete) %></td>
+        <td><%= link_to 'Destroy', gym_enquete, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gym Enquete', new_gym_enquete_path %>
