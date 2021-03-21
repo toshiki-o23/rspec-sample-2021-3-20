@@ -28,7 +28,11 @@ module RspecSample
     # Don't generate system test files.
     config.generators.system_tests = nil
 
+    # 東京時間に変更
     config.time_zone = 'Tokyo'
     config.active_record.default_timezone = :local
+
+    # 日本語化
+    config.i18n.default_locale = :ja
   end
 end
