@@ -24,7 +24,7 @@ class GymEnquetesController < ApplicationController
     @gym_enquete = GymEnquete.new(gym_enquete_params)
 
     if @gym_enquete.save
-      redirect_to @gym_enquete, notice: 'Gym enquete was successfully created.'
+      redirect_to @gym_enquete, notice: I18n.t('successes.submit', name: @gym_enquete.model_name.human)
     else
       render :new
     end
@@ -33,7 +33,7 @@ class GymEnquetesController < ApplicationController
   # PATCH/PUT /gym_enquetes/1
   def update
     if @gym_enquete.update(gym_enquete_params)
-      redirect_to @gym_enquete, notice: 'Gym enquete was successfully updated.'
+      redirect_to @gym_enquete, notice: I18n.t('successes.update', name: @gym_enquete.model_name.human)
     else
       render :edit
     end
@@ -42,7 +42,7 @@ class GymEnquetesController < ApplicationController
   # DELETE /gym_enquetes/1
   def destroy
     @gym_enquete.destroy
-    redirect_to gym_enquetes_url, notice: 'Gym enquete was successfully destroyed.'
+    redirect_to gym_enquetes_url, notice: I18n.t('successes.destroy', name: @gym_enquete.model_name.human)
   end
 
   private
